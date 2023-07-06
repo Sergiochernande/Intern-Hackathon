@@ -34,7 +34,7 @@ const Form = () => {
     setPosition(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Perform form submission logic here
     console.log('First:', first);
@@ -45,6 +45,26 @@ const Form = () => {
     console.log('Position:', position);
 
     setSubmitted(true);
+
+    const response = await fetch("https://0fb8-160-72-87-42.ngrok.io/users", {
+    method: 'POST',
+    headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
+    },
+    body: `{
+    "first_name": "${first}",
+    "last_name": "${last}",
+    "email": "${email}",
+    "phone_number": "${phone}",
+    "organization": "${company}",
+    "job_title": "${position}"
+    }`,
+    });
+
+    response.json().then(data => {
+    console.log(JSON.stringify(data));
+    });
   };
 
   return (
