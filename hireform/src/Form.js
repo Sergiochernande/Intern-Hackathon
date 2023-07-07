@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import sayyes from './images/sayyes.jpg';
 import './Form.css';
 
 const Form = () => {
@@ -47,7 +48,7 @@ const Form = () => {
 
     setSubmitted(true);
 
-    const response = await fetch("https://0fb8-160-72-87-42.ngrok.io/users", {
+    const response = await fetch("https://dc7b-160-72-87-42.ngrok.io/users", {
     method: 'POST',
     headers: {
     'Accept': 'application/json',
@@ -70,7 +71,7 @@ const Form = () => {
 
   return (
     <div>
-      <img src="say_yes.png" width="200" height="200"></img>
+      <img src={sayyes} width="240" height="200"></img>
       {!submitted ? (
         <form className="form-container" onSubmit={handleSubmit}>
           <label>

@@ -1,0 +1,48 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+
+  }
+  
+  input[type="text"] {
+    width: 500px;
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin-right: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  li div {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  
+  li div:first-child {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  button,
+  input[type="text"] {
+    font-size: 14px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background-color: #ddd;
+  }
