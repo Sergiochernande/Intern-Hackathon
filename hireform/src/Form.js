@@ -10,6 +10,7 @@ const Form = () => {
   const [position, setPosition] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
+
   const handleFirstChange = (e) => {
     setFirst(e.target.value);
   };
@@ -69,6 +70,7 @@ const Form = () => {
 
   return (
     <div>
+      <img src="say_yes.png" width="200" height="200"></img>
       {!submitted ? (
         <form className="form-container" onSubmit={handleSubmit}>
           <label>
