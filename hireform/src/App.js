@@ -2,17 +2,12 @@ import './App.css';
 import Form from './Form';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Form/>
-      </header>
-    <script>
+<script>
       // Create a button element
       const button = document.createElement('button')
 
       // Set the button text to 'Can you click me?'
-      button.innerText = 'Got the Job?'
+      button.innerText = 'I got the job'
 
       button.id = 'mainButton'
 
@@ -25,6 +20,13 @@ function App() {
 
       document.body.appendChild(button)
     </script>
+  
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Form/>
+      </header>
+    
         <body>
    <button id="mainButton">Click Me</button>
    <p id="count"></p>
